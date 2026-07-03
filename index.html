@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Dass Hospitality | Exceptional Catering &amp; Event Hospitality
+    </title>
+    <meta
+      name="description"
+      content="Dass Hospitality is a family-run catering and event hospitality company delivering exceptional food, service and hospitality for crew catering, weddings, corporate events, festivals and immersive experiences."
+    />
+    <meta
+      name="keywords"
+      content="Dass Hospitality, catering, event catering, crew catering, artist catering, wedding catering, corporate events, festival catering, street food, London catering"
+    />
+    <meta name="author" content="Dass Hospitality" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Dass Hospitality | Exceptional Catering &amp; Event Hospitality"
+    />
+    <meta
+      property="og:description"
+      content="Exceptional food, service and hospitality for every event — from crew catering to immersive West End experiences, weddings and festivals."
+    />
+    <meta property="og:image" content="images/DASS-hero.jpg" />
+    <meta property="og:url" content="https://www.dasshospitality.co.uk" />
+    <meta property="og:locale" content="en_GB" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dass Hospitality" />
+    <meta
+      name="twitter:description"
+      content="Exceptional food, service and hospitality for every event."
+    />
+    <meta name="twitter:image" content="images/DASS-hero.jpg" />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9670;</text></svg>"
+    />
+
+    <!-- Google Fonts: Bebas Neue (headings — Latin/Latin-Extended only, no Cyrillic on Google's CDN) + Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ============ HEADER / NAVIGATION ============ -->
+    <header class="site-header" id="site-header">
+      <div class="nav-wrap container">
+        <a href="#home" class="logo" aria-label="Dass Hospitality — home"
+          >Dass<span>Hospitality</span></a
+        >
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="home">
+        <div class="hero-media">
+          <!-- Replace hero-placeholder.jpg with signature brand photography -->
+          <img
+            src="images/DASS-hero.jpg"
+            alt="Dass Hospitality catering and event styling"
+            class="hero-img"
+          />
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content container">
+          <p class="eyebrow fade-in">
+            Independent &middot; Family Run &middot; Est. hospitality experts
+          </p>
+          <h1 class="hero-title fade-in">Dass Hospitality</h1>
+          <p class="hero-subtitle fade-in">
+            Exceptional food, service and hospitality for every event.
+          </p>
+          <div class="hero-actions fade-in">
+            <a href="#services" class="btn btn-primary">Our Services</a>
+            <a href="#contact" class="btn btn-outline">Contact Us</a>
+          </div>
+        </div>
+        <a
+          href="#about"
+          class="scroll-indicator"
+          aria-label="Scroll to About section"
+        >
+          <span></span>
+        </a>
+      </section>
+
+      <!-- ============ TRAILER ============ -->
+      <section class="trailer" id="trailer">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Watch</p>
+            <h2>Our Story, In Motion</h2>
+          </div>
+
+          <div class="video-wrapper reveal">
+            <!-- Promotional trailer video (portrait). No poster image set — renders as a clean black frame with a play button until a still frame is available. -->
+            <video
+              id="trailer-video"
+              class="trailer-video"
+              preload="none"
+              playsinline
+              controls
+              controlslist="nodownload"
+            >
+              <source src="videos/dass-trailer.mov" />
+              Your browser does not support embedded video.
+              <a href="videos/dass-trailer.mov">Download the trailer</a>
+              instead.
+            </video>
+            <button
+              type="button"
+              class="video-play-btn"
+              id="video-play-btn"
+              aria-label="Play promotional trailer"
+            >
+              <span class="video-play-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="about" id="about">
+        <div class="container about-grid">
+          <div class="about-media reveal">
+            <!-- Replace about-placeholder.jpg with a photo of the founders -->
+            <img
+              src="images/about-placeholder.jpg"
+              alt="Danny and Abbi, founders of Dass Hospitality"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-copy reveal">
+            <p class="eyebrow">About Us</p>
+            <h2>Hospitality, done properly.</h2>
+            <p>
+              Dass Hospitality is a family-run business founded by Danny and
+              Abbi. Between them they bring over forty years of combined
+              experience, built on a single principle: every event deserves
+              exceptional food, service and hospitality &mdash; whatever its
+              size.
+            </p>
+            <p>
+              We shape our offering around what our clients need and want, with
+              a genuinely can-do attitude at the heart of everything we do. Put
+              simply, if you're happy, we're happy.
+            </p>
+            <p>
+              Our work spans crew and artist catering, immersive West End
+              productions, corporate events, street food, weddings, private
+              parties and much more. We love hospitality in all its forms, and
+              believe no event is too big or too small to deserve our full
+              attention.
+            </p>
+            <a href="#contact" class="text-link">Start a conversation &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SERVICES ============ -->
+      <section class="services" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">What We Do</p>
+            <h2>Our Services</h2>
+            <p class="section-intro">
+              From backstage crew meals to full-scale festival kitchens, we
+              tailor every service to the occasion.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">&#9670;</div>
+              <h3>Crew Catering</h3>
+              <p>
+                Reliable, nourishing meals for touring crews and production
+                teams, delivered on schedule wherever the job takes us.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">&#9670;</div>
+              <h3>Artist Catering</h3>
+              <p>
+                Bespoke hospitality riders and dressing-room dining crafted
+                around the needs of touring artists and their teams.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">&#9670;</div>
+              <h3>Corporate Events</h3>
+              <p>
+                Polished catering for conferences, launches and away days that
+                leaves a lasting, professional impression.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">&#9670;</div>
+              <h3>Weddings</h3>
+              <p>
+                Thoughtfully designed menus and seamless service for one of the
+                most important days of your life.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">&#9670;</div>
+              <h3>Private Parties</h3>
+              <p>
+                Intimate gatherings and celebrations catered with the same care
+                and attention as our largest productions.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">&#9670;</div>
+              <h3>Festivals</h3>
+              <p>
+                High-volume festival kitchens built for speed, consistency and
+                quality under pressure.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">&#9670;</div>
+              <h3>Street Food</h3>
+              <p>
+                Bold, characterful street food concepts designed to draw a queue
+                and keep them coming back.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">&#9670;</div>
+              <h3>Theatre &amp; Live Events</h3>
+              <p>
+                Food and beverage woven into immersive productions and live
+                experiences, front of house and backstage.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">&#9670;</div>
+              <h3>Pop-ups</h3>
+              <p>
+                End-to-end concept, menu and operational support for short-run
+                pop-up dining experiences.
+              </p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">&#9670;</div>
+              <h3>Food Consultancy</h3>
+              <p>
+                Strategic guidance on menu design, operations and concept
+                development for hospitality brands.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FEATURED PROJECTS ============ -->
+      <section class="projects" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Our Work</p>
+            <h2>Featured Projects</h2>
+            <p class="section-intro">
+              A selection of the concepts, venues and productions we've had the
+              pleasure of feeding.
+            </p>
+          </div>
+
+          <div class="projects-list">
+            <article class="project-item reveal">
+              <div class="project-media">
+                <!-- Replace with photography from Oriole Café -->
+                <img
+                  src="images/project-oriole-cafe.png"
+                  alt="Oriole Café, Canterbury"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-copy">
+                <p class="eyebrow">Canterbury</p>
+                <h3>Oriole Café</h3>
+                <p>
+                  A community café at the heart of Canterbury, serving specialty
+                  coffee, house-made pastries and a seasonal breakfast and lunch
+                  menu to locals and visitors alike.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-item reveal reverse">
+              <div class="project-media">
+                <!-- Replace with photography from Beastie Bao -->
+                <img
+                  src="images/project-beastie-bao.png"
+                  alt="Beastie Bao at Dreamland Margate"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-copy">
+                <p class="eyebrow">Dreamland Margate</p>
+                <h3>Beastie Bao</h3>
+                <p>
+                  Our bao concept at Dreamland Margate, bringing bold, playful
+                  flavours to one of the UK's most iconic seaside amusement
+                  parks.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-item reveal">
+              <div class="project-media">
+                <!-- Replace with photography from Birdie Macs -->
+                <img
+                  src="images/project-birdie-macs.PNG"
+                  alt="Birdie Macs at Dreamland Margate"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-copy">
+                <p class="eyebrow">Dreamland Margate</p>
+                <h3>Birdie Macs</h3>
+                <p>
+                  A second Dreamland concept, serving indulgent, crowd-pleasing
+                  comfort food to the park's steady stream of visitors.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-item reveal reverse">
+              <div class="project-media">
+                <!-- Replace with photography from The Greatest Show -->
+                <img
+                  src="images/project-come-alive.jpg"
+                  alt="The Greatest Show at the Empress Theatre, London"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-copy">
+                <p class="eyebrow">Come Alive</p>
+                <h3>The Greatest Show</h3>
+                <p>
+                  Exclusive food provider for this immersive West End production
+                  at the Empress Theatre, London &mdash; weaving hospitality
+                  into every part of the guest experience.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-item reveal">
+              <div class="project-media">
+                <!-- Replace with photography from Dreamland crew catering -->
+                <img
+                  src="images/project-dreamland-crew.png"
+                  alt="Dreamland crew catering for touring artists"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-copy">
+                <p class="eyebrow">Dreamland Margate</p>
+                <h3>Crew Catering</h3>
+                <p>
+                  Ongoing crew and artist catering for major touring acts
+                  including Tom Jones, Madness, HAIM and Sugababes.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ GALLERY ============ -->
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">In The Field</p>
+            <h2>Gallery</h2>
+            <p class="section-intro">
+              Moments from kitchens, events and productions across the country.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-1.jpg"
+                alt="Gallery placeholder image 1"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-2.jpg"
+                alt="Gallery placeholder image 2"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-3.jpg"
+                alt="Gallery placeholder image 3"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-4.jpg"
+                alt="Gallery placeholder image 4"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-5.jpg"
+                alt="Gallery placeholder image 5"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-6.jpg"
+                alt="Gallery placeholder image 6"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-7.jpg"
+                alt="Gallery placeholder image 7"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-8.jpg"
+                alt="Gallery placeholder image 8"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-9.jpg"
+                alt="Gallery placeholder image 9"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-10.jpg"
+                alt="Gallery placeholder image 10"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-11.jpg"
+                alt="Gallery placeholder image 11"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-12.jpg"
+                alt="Gallery placeholder image 12"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-13.jpg"
+                alt="Gallery placeholder image 13"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="images/gallery-placeholder-14.jpg"
+                alt="Gallery placeholder image 14"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ STATISTICS ============ -->
+      <section class="stats">
+        <div class="container stats-grid">
+          <div class="stat-item reveal">
+            <span class="stat-number" data-target="40" data-suffix="+">0</span>
+            <span class="stat-label">Years of Combined Experience</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-number" data-target="100" data-suffix="+">0</span>
+            <span class="stat-label">Events Catered</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-number" data-static="Multiple">0</span>
+            <span class="stat-label">Hospitality Concepts</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-number" data-static="Thousands">0</span>
+            <span class="stat-label">Guests Served</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CLIENTS ============ -->
+      <section class="clients" id="clients">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Trusted By</p>
+            <h2>Clients &amp; Partners</h2>
+          </div>
+
+          <div class="clients-columns">
+            <div class="clients-group reveal">
+              <h3>Corporate</h3>
+              <ul class="clients-list">
+                <li>Just Eat</li>
+                <li>Marshall</li>
+                <li>Softwire</li>
+              </ul>
+            </div>
+
+            <div class="clients-group reveal">
+              <h3>Food Brands</h3>
+              <ul class="clients-list clients-list-wide">
+                <li>Rad Burger</li>
+                <li>Little Bao Boy</li>
+                <li>Opso</li>
+                <li>Pitta Bun</li>
+                <li>SoBe Burger</li>
+                <li>Sauce Shop</li>
+                <li>Chick 'n' Bun</li>
+                <li>Halo Burger</li>
+                <li>Rudi's Burgers</li>
+                <li>Tiger &amp; Rabbit</li>
+                <li>Salt Shed</li>
+                <li>Big Has</li>
+                <li>Ivan Ramen</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIALS ============ -->
+      <section class="testimonials">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Kind Words</p>
+            <h2>What Clients Say</h2>
+          </div>
+
+          <div class="testimonials-grid">
+            <blockquote class="testimonial-card reveal">
+              <p>
+                &ldquo;Dass took care of every detail for our wedding breakfast,
+                and the food was outstanding. Our guests are still talking about
+                it.&rdquo;
+              </p>
+              <cite>&mdash; Client Name Placeholder, Wedding Client</cite>
+            </blockquote>
+
+            <blockquote class="testimonial-card reveal">
+              <p>
+                &ldquo;We've used Dass for crew catering on multiple tours.
+                They're professional, flexible and genuinely great to work with
+                under pressure.&rdquo;
+              </p>
+              <cite>&mdash; Client Name Placeholder, Tour Manager</cite>
+            </blockquote>
+
+            <blockquote class="testimonial-card reveal">
+              <p>
+                &ldquo;From concept to execution, the team brought energy and
+                precision to our corporate launch. Faultless service from start
+                to finish.&rdquo;
+              </p>
+              <cite
+                >&mdash; Client Name Placeholder, Corporate Events Lead</cite
+              >
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="contact" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Get In Touch</p>
+            <h2>Let's Talk About Your Event</h2>
+            <p>We'd love to hear about your event.</p>
+
+            <ul class="contact-details">
+              <li>
+                <span class="contact-label">Email</span>
+                <a href="mailto:hello@dasshospitality.co.uk"
+                  >hello@dasshospitality.co.uk</a
+                >
+              </li>
+              <li>
+                <span class="contact-label">Phone</span>
+                <a href="tel:+441234567890">+44 (0)1234 567 890</a>
+              </li>
+              <li>
+                <span class="contact-label">Instagram</span>
+                <a
+                  href="https://instagram.com/dasshospitality"
+                  target="_blank"
+                  rel="noopener"
+                  >@dasshospitality</a
+                >
+              </li>
+            </ul>
+
+            <a href="mailto:hello@dasshospitality.co.uk" class="btn btn-primary"
+              >Make an Enquiry</a
+            >
+          </div>
+
+          <form class="contact-form reveal" aria-label="Enquiry form">
+            <div class="form-row">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="event-type">Event Type</label>
+              <input
+                type="text"
+                id="event-type"
+                name="event-type"
+                placeholder="e.g. Wedding, Corporate, Festival"
+              />
+            </div>
+            <div class="form-row">
+              <label for="message">Tell Us About Your Event</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Enquiry
+            </button>
+            <p class="form-note">
+              This form is for demonstration purposes and is not currently
+              connected to a backend.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">Dass<span>Hospitality</span></a>
+          <p>Exceptional food, service and hospitality for every event.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-social">
+          <a href="#" aria-label="Dass Hospitality on Instagram">Instagram</a>
+          <a href="#" aria-label="Dass Hospitality on LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Dass Hospitality on Facebook">Facebook</a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>
+          &copy; <span id="current-year"></span> Dass Hospitality. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
