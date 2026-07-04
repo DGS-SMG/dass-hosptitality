@@ -269,9 +269,9 @@ section {
 }
 
 .site-header.scrolled {
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(17, 17, 17, 0.92);
   backdrop-filter: blur(10px);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
   height: 72px;
 }
 
@@ -291,9 +291,6 @@ section {
   letter-spacing: 0.04em;
 }
 
-.site-header.scrolled .logo {
-  color: var(--color-black);
-}
 
 .logo span {
   font-weight: 400;
@@ -309,17 +306,15 @@ section {
 
 .primary-nav a {
   font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--color-white);
   position: relative;
   padding-bottom: 4px;
   transition: color var(--transition-medium);
 }
 
-.site-header.scrolled .primary-nav a {
-  color: var(--color-black);
-}
 
 .primary-nav a::after {
   content: '';
@@ -362,9 +357,6 @@ section {
   transition: background-color var(--transition-medium), transform var(--transition-fast), opacity var(--transition-fast);
 }
 
-.site-header.scrolled .nav-toggle-bar {
-  background-color: var(--color-black);
-}
 
 /* ------------------------------ 5. HERO ------------------------------------ */
 .hero {
@@ -473,6 +465,19 @@ section {
 }
 
 /* ------------------------------ 6. TRAILER --------------------------------- */
+.trailer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.trailer .eyebrow {
+  color: var(--color-accent-light);
+}
+
+.trailer .section-heading h2 {
+  color: var(--color-white);
+}
+
 /* Trailer footage is shot vertically (9:16), so the frame is styled as a
    tall showcase rather than a cropped widescreen box. */
 .video-wrapper {
@@ -485,7 +490,7 @@ section {
   background-color: var(--color-black);
   overflow: hidden;
   border-radius: 4px;
-  box-shadow: 0 30px 60px rgba(17, 17, 17, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .trailer-video {
@@ -543,6 +548,15 @@ section {
 }
 
 /* ------------------------------ 7. ABOUT ----------------------------------- */
+.about {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.about .eyebrow {
+  color: var(--color-accent-light);
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -558,12 +572,24 @@ section {
 }
 
 .about-copy h2 {
+  color: var(--color-white);
   margin-bottom: var(--space-md);
 }
 
 .about-copy p {
+  color: rgba(255, 255, 255, 0.72);
   margin-bottom: var(--space-sm);
   max-width: 560px;
+}
+
+.about-copy .text-link {
+  color: var(--color-white);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.about-copy .text-link:hover {
+  color: var(--color-accent-light);
+  border-color: var(--color-accent-light);
 }
 
 /* ------------------------------ 8. SERVICES -------------------------------- */
@@ -620,6 +646,23 @@ section {
 }
 
 /* ------------------------------ 9. PROJECTS -------------------------------- */
+.projects {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.projects .eyebrow {
+  color: var(--color-accent-light);
+}
+
+.projects .section-heading h2 {
+  color: var(--color-white);
+}
+
+.projects .section-intro {
+  color: rgba(255, 255, 255, 0.72);
+}
+
 .projects-list {
   display: flex;
   flex-direction: column;
@@ -658,15 +701,40 @@ section {
 
 .project-copy h3 {
   font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  color: var(--color-white);
 }
 
 .project-copy p {
+  color: rgba(255, 255, 255, 0.72);
   max-width: 480px;
+}
+
+.project-copy .text-link {
+  color: var(--color-white);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.project-copy .text-link:hover {
+  color: var(--color-accent-light);
+  border-color: var(--color-accent-light);
 }
 
 /* ------------------------------ 10. GALLERY --------------------------------- */
 .gallery {
-  background-color: var(--color-grey-light);
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.gallery .eyebrow {
+  color: var(--color-accent-light);
+}
+
+.gallery .section-heading h2 {
+  color: var(--color-white);
+}
+
+.gallery .section-intro {
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .gallery-grid {
@@ -721,10 +789,24 @@ section {
 }
 
 /* ------------------------------ 12. CLIENTS -------------------------------- */
+.clients {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.clients .eyebrow {
+  color: var(--color-accent-light);
+}
+
+.clients .section-heading h2 {
+  color: var(--color-white);
+}
+
 .clients-columns {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 0.8fr 1.6fr 0.8fr;
   gap: var(--space-xl);
+  align-items: start;
 }
 
 .clients-group h3 {
@@ -740,8 +822,9 @@ section {
 .clients-list li {
   font-family: var(--font-heading);
   font-size: 1.3rem;
+  color: var(--color-white);
   padding-block: 0.55rem;
-  border-bottom: 1px solid var(--color-grey-mid);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   transition: color var(--transition-fast), padding-left var(--transition-fast);
 }
 
@@ -751,11 +834,24 @@ section {
 }
 
 .clients-list-wide {
-  columns: 2 220px;
-  column-gap: var(--space-lg);
+  columns: 2 160px;
+  column-gap: var(--space-md);
 }
 
 /* ------------------------------ 13. TESTIMONIALS --------------------------- */
+.testimonials {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.testimonials .eyebrow {
+  color: var(--color-accent-light);
+}
+
+.testimonials .section-heading h2 {
+  color: var(--color-white);
+}
+
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -785,7 +881,28 @@ section {
 
 /* ------------------------------ 14. CONTACT -------------------------------- */
 .contact {
-  background-color: var(--color-grey-light);
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.contact .eyebrow {
+  color: var(--color-accent-light);
+}
+
+.contact-copy h2 {
+  color: var(--color-white);
+}
+
+.contact .btn-primary {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-color: var(--color-white);
+}
+
+.contact .btn-primary:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-white);
 }
 
 .contact-grid {
@@ -795,6 +912,7 @@ section {
 }
 
 .contact-copy p {
+  color: rgba(255, 255, 255, 0.72);
   margin-bottom: var(--space-md);
 }
 
@@ -806,12 +924,13 @@ section {
   display: flex;
   flex-direction: column;
   padding-block: var(--space-xs);
-  border-bottom: 1px solid var(--color-grey-mid);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .contact-details a {
   font-family: var(--font-heading);
   font-size: 1.2rem;
+  color: var(--color-white);
   transition: color var(--transition-fast);
 }
 
@@ -925,6 +1044,10 @@ section {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.footer-bottom p {
+  color: inherit;
+}
+
 /* ------------------------------ 16. ANIMATIONS / REVEAL -------------------- */
 .fade-in {
   opacity: 0;
@@ -990,6 +1113,10 @@ section {
     --space-lg: 2.5rem;
   }
 
+  .about-media {
+    display: none;
+  }
+
   .nav-toggle {
     display: flex;
   }
@@ -1025,6 +1152,10 @@ section {
 
   .nav-cta {
     align-self: flex-start;
+  }
+
+  .nav-toggle.is-open .nav-toggle-bar {
+    background-color: var(--color-black);
   }
 
   .nav-toggle.is-open .nav-toggle-bar:nth-child(1) {
