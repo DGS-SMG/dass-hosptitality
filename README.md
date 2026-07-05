@@ -97,7 +97,6 @@ No build step is required. Either:
 - **Text content** — edit directly in `index.html`. Sections are clearly commented (Hero, About, Services, Projects, Gallery, Clients, Statistics, Testimonials, Contact, Footer).
 - **Colours & spacing** — all core design tokens (colours, fonts, spacing) are defined as CSS custom properties at the top of `css/styles.css` under `:root`.
 - **Images** — replace files inside `images/` with real photography, keeping the same filenames and roughly similar aspect ratios for best results.
-- **Contact form** — the form in the Contact section is static HTML only (no backend). To make it functional, integrate a form service such as [Formspree](https://formspree.io/), [Netlify Forms](https://docs.netlify.com/forms/setup/), or a custom backend endpoint, and update the `<form>` tag's `action`/`method` attributes accordingly.
 
 ## Accessibility & Performance Notes
 

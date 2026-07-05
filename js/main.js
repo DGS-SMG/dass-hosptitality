@@ -145,14 +145,4 @@
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
-
-  /* ---------- Contact form: prevent actual submission (static site) ---------- */
-  var contactForm = document.querySelector('.contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (event) {
-      event.preventDefault();
-      alert('Thank you for your enquiry. This form is a static demo and is not yet connected to a backend.');
-      contactForm.reset();
-    });
-  }
 })();
