@@ -1,5 +1,5 @@
 /*
- * Dass Hospitality — main.js
+ * DASS Hospitality — main.js
  * Minimal vanilla JS: sticky header, mobile nav, scroll reveal,
  * animated counters, smooth scroll, footer year.
  */

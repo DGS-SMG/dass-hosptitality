@@ -1,6 +1,6 @@
-# Dass Hospitality — Website
+# DASS Hospitality — Website
 
-A modern, elegant, fully static website for Dass Hospitality, built with plain HTML, CSS and JavaScript. No frameworks, no build tools, no backend required.
+A modern, elegant, fully static website for DASS Hospitality, built with plain HTML, CSS and JavaScript. No frameworks, no build tools, no backend required.
 
 ## Project Structure
 
@@ -56,7 +56,7 @@ No build step is required. Either:
    ```bash
    git init
    git add .
-   git commit -m "Initial commit: Dass Hospitality website"
+   git commit -m "Initial commit: DASS Hospitality website"
    git branch -M main
    git remote add origin https://github.com/<your-username>/<your-repo>.git
    git push -u origin main
